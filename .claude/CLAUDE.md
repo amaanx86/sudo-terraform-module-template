@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Project-scoped context for Claude Code and AGENTS.md-aware runtimes (Codex, Kiro, GitLab Duo, etc.). The root `CLAUDE.md` and `AGENTS.md` symlinks both point here so tools auto-discover this file.
+Project-scoped context for Claude Code and AGENTS.md-aware runtimes (Codex, Kiro, GitLab Duo, etc.). Claude Code reads this file from `.claude/` directly; the root `AGENTS.md` symlink points here for the other runtimes.
 
 ## What this repository is
 
@@ -30,7 +30,7 @@ The README's Requirements/Providers/Inputs/Outputs tables between the `BEGIN_TF_
 
 1. Branch from `main`.
 2. Make the change; update or add `examples/` when the module API changes.
-3. `make fmt lint checkov` clean, `make docs` regenerated.
+3. `make fmt lint checkov` clean, `make docs` regenerated, `CHANGELOG.md` updated under `[Unreleased]`.
 4. Conventional commit message.
 5. Open a PR; CI runs pre-commit and checkov and must pass.
 
